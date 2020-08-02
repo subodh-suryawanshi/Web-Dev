@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Vitae maxime tenetur pariatur optio necessitatibus?</p>
+    <p>Magnam officia consectetur ipsam nemo debitis?</p>
+    <p>Esse assumenda mollitia minima? Rerum, animi!</p>
+    <p>Nobis sequi minus commodi officiis nesciunt!</p>
+    <script>
+      var tag = document.getElementsByTagName("p");
+      console.log("Tag : ", tag[0]);
+      tag[1].innerHTML = "Hello para...!!!";
+      tag[2].style.color = "blue";
+
+      for (var i = 0; i < tag.length; i++) {
+        tag[i].style.color = "blue";
+      }
+    </script>
+  </body>
+</html>

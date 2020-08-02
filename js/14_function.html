@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var s1sub1 = 45;
+      var s1sub2 = 67;
+      var sum = s1sub1 + s1sub2;
+      document.write("<br> Total is : " + sum);
+
+      var s1sub1 = 89;
+      var s1sub2 = 34;
+      var sum = s1sub1 + s1sub2;
+      document.write("<br> Total is : " + sum);
+
+      document.write("<hr> Call_by_function...<br>");
+
+      function result(s1_sub1, s1_sub2) {
+        var tsum = s1_sub1 + s1_sub2;
+        document.write("<br> Total is : " + tsum);
+      }
+
+      result(65, 80);
+      result(32, 98);
+      result(62, 67);
+
+      document.write("<hr> Call_by_function...<br>");
+
+      function sayHello() {
+        document.write("<br> Hello!!!");
+      }
+      sayHello();
+      sayHello();
+      sayHello();
+    </script>
+  </body>
+</html>

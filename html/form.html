@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="welcome.html" method="POST">
+      <label for="uName"> User Name : </label>
+      <input type="text" placeholder="Please User Name " name="username" />
+      <br />
+
+      <label for="password"> Password </label>
+      <input
+        type="password"
+        placeholder=" Please Enter Password "
+        name="password"
+      />
+      <br />
+
+      <label for="color"> Color : </label>
+      <input type="color" name="color" />
+      <br />
+
+      <label for="date"> DOB : </label>
+      <input type="date" name="dob" />
+      <br />
+
+      <label for="city"> City : </label>
+      <select name="city">
+        <option> Select City </option>
+        <option value="nag"> Nagpur </option>
+        <option value="pune"> Pune </option>
+        <option value="mum"> Mumbai </option>
+        <option value="nsk"> Nashik </option>
+      </select>
+      <br />
+
+      <label for="V"> Do you have...? : </label> <br />
+      <input type="checkbox" name="bike" /> Bike <br />
+      <input type="checkbox" name="car" /> Car <br />
+
+      <label for="Gen"> Gender : </label> <br />
+      <input type="radio" name="gen" /> Male <br />
+      <input type="radio" name="gen" /> Female <br />
+      <input type="submit" value="Send" />
+    </form>
+    <hr />
+    <hr />
+
+    <form action="welcome.html">
+      <table border="0" width="350px" height="300px">
+        <tr>
+          <td><label for="uName"> User Name </label></td>
+          <td>
+            :
+            <input
+              type="text"
+              placeholder="Please User Name "
+              name="username"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="password"> Password </label></td>
+          <td>
+            :
+            <input
+              type="password"
+              placeholder=" Please Enter Password "
+              name="password"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="color"> Color </label></td>
+          <td>: <input type="color" name="color" /></td>
+        </tr>
+        <tr>
+          <td><label for="date"> DOB </label></td>
+          <td>: <input type="date" name="dob" /></td>
+        </tr>
+        <tr>
+          <td><label for="city"> City </label></td>
+          <td>
+            :
+            <select name="city">
+              <option> Select City </option>
+              <option value="nag"> Nagpur </option>
+              <option value="pune"> Pune </option>
+              <option value="mum"> Mumbai </option>
+              <option value="nsk"> Nashik </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="V"> Do you have...? </label></td>
+          <td>
+            : <input type="checkbox" name="bike" /> Bike
+            <input type="checkbox" name="car" /> Car
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Gen"> Gender </label> <br /></td>
+          <td>
+            : <input type="radio" name="gen" /> Male
+            <input type="radio" name="gen" /> Female
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Send" /></td>
+          <td><input type="button" value="Clear" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

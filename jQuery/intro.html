@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $("img").click(function () {
+          alert("I am hidding...");
+          $(this).hide(function () {});
+        });
+      });
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("p").hide();
+        });
+        $("#show").click(function () {
+          $("p").show();
+        });
+      });
+    </script>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <p>Adipisci, quod nemo. Dolore similique placeat cumque!</p>
+    <p>Sapiente nemo consectetur velit et, amet perferendis.</p>
+    <p>Voluptatum, dicta deserunt? Qui velit doloremque nobis!</p>
+    <p>Maxime est dolor, voluptatibus aut repellat ipsa!</p>
+    <img src="../assets/newyork.jpg" />
+    <img src="../assets/paris.jpg" />
+    <img src="../assets/sanfran.jpg" />
+    <hr />
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+  </body>
+</html>

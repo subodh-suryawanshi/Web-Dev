@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .img1 {
+        position: absolute;
+        left: 400px;
+        top: 75px;
+      }
+      .cls1 {
+        color: navy;
+        border: 2px solid brown;
+        width: 100px;
+      }
+      .scroll {
+        overflow: auto;
+        border: 2px solid darkslategrey;
+        width: 168px;
+        height: 400px;
+        padding: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1px" width="150px" height="150px">
+      <tr>
+        <th>Image Size</th>
+      </tr>
+      <tr>
+        <th onclick="document.getElementById('bigimg').width = 200">Small</th>
+      </tr>
+      <tr>
+        <th onclick="document.getElementById('bigimg').width = 500">Medium</th>
+      </tr>
+      <tr>
+        <th onclick="document.getElementById('bigimg').width = 800">Large</th>
+      </tr>
+    </table>
+    <div>
+      <ul class="cls1">
+        <li id="id1" onclick="document.getElementById('bigimg').width = 200">
+          <h3>Small</h3>
+        </li>
+        <li id="id2" onclick="document.getElementById('bigimg').width = 500">
+          <h3>Medium</h3>
+        </li>
+        <li id="id3" onclick="document.getElementById('bigimg').width = 800">
+          <h3>Large</h3>
+        </li>
+      </ul>
+    </div>
+    <img class="img1" id="bigimg" src="../assets/img1.jpg" width="500" /><br />
+    <div class="scroll">
+      <img
+        src="../assets/img1.jpg"
+        width="150"
+        onclick="document.getElementById('bigimg').src = src"
+      /><br />
+      <img
+        src="../assets/img2.jpg"
+        width="150"
+        onclick="document.getElementById('bigimg').src = src"
+      /><br />
+      <img
+        src="../assets/img3.jpg"
+        width="150"
+        onclick="document.getElementById('bigimg').src = src"
+      /><br />
+      <img
+        src="../assets/img4.jpg"
+        width="150"
+        onclick="document.getElementById('bigimg').src = src"
+      /><br />
+      <img
+        src="../assets/img5.jpg"
+        width="150"
+        onclick="document.getElementById('bigimg').src = src"
+      /><br />
+      <img
+        src="../assets/img6.jpg"
+        width="150"
+        onclick="document.getElementById('bigimg').src = src"
+      /><br />
+      <img
+        src="../assets/img7.jpg"
+        width="150"
+        onclick="document.getElementById('bigimg').src = src"
+      /><br />
+      <img
+        src="../assets/img8.jpg"
+        width="150"
+        onclick="document.getElementById('bigimg').src = src"
+      /><br />
+      <img
+        src="../assets/img9.jpg"
+        width="150"
+        onclick="document.getElementById('bigimg').src = src"
+      /><br />
+      <img
+        src="../assets/img10.jpg"
+        width="150"
+        onclick="document.getElementById('bigimg').src = src"
+      /><br />
+      <img
+        src="../assets/img11.jpg"
+        width="150"
+        onclick="document.getElementById('bigimg').src = src"
+      /><br />
+    </div>
+  </body>
+</html>
